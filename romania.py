@@ -29,8 +29,7 @@ while True:
         break
     answers = search_google(query)
     if answers:
-        for i, answer in enumerate(answers):
-            print(f"Răspuns {i+1}: {' '.join(answer.split()[:50])}...")
-
+        print(f"Răspuns: {' '.join(answers[0].split()[:50])}...")
     else:
         print("Nu am găsit niciun răspuns relevant.")
+
